@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/mobile.css"
+      media="screen and (max-width: 768px)"
+    />
     <title>HODU</title>
   </head>
   <body>
@@ -17,7 +22,9 @@
         <h1 class="ally-hidden">HODU</h1>
         <a href="#"><img src="./assets/icons/logo.svg" alt="호두 로고" /></a>
       </div>
-      <nav class="header-nav">
+      <button aria-label="네이게이션바 열기" id="btn-open-nav"></button>
+      <nav class="header-nav" id="header-nav">
+        <button aria-label="네이게이션바 닫기" id="btn-close-nav"></button>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -182,8 +189,8 @@
       </ul>
     </footer>
 
-    <!-- modal script -->
     <script>
+      // modal script
       const modal = document.getElementById("modal");
       const openBtn = document.getElementById("btn-open-modal");
       const closeBtn = document.getElementById("btn-close-modal");
@@ -194,6 +201,27 @@
 
       closeBtn.addEventListener("click", () => {
         modal.close();
+      });
+
+      // nav-open-close script
+      const openBtn_nav = document.getElementById("btn-open-nav");
+      const closeBtn_nav = document.getElementById("btn-close-nav");
+      const nav = document.getElementById("header-nav");
+
+      openBtn_nav.addEventListener("click", () => {
+        if (nav.style.right === "0") {
+          nav.style.right = "-28.9rem";
+        } else {
+          nav.style.right = "0";
+        }
+      });
+
+      closeBtn_nav.addEventListener("click", () => {
+        if (nav.style.right === "-28.9rem") {
+          nav.style.right = "0";
+        } else {
+          nav.style.right = "-28.9rem";
+        }
       });
     </script>
   </body>

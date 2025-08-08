@@ -33,14 +33,6 @@ body {
   color: #000;
 }
 
-header,
-section,
-footer {
-  width: 100%;
-  padding: 0 var(--padding);
-  margin: 0 auto;
-}
-
 /* utils */
 .ally-hidden {
   position: absolute;
@@ -55,14 +47,6 @@ footer {
 
 img {
   vertical-align: bottom;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 4rem;
 }
 
 .btn {
@@ -82,16 +66,25 @@ img {
   transition: opacity 0.1s;
 }
 
-:is(.btn, a):hover {
+:is(button, a):hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 /* temp */
-/* body * {
+body * {
   border: 1px solid red;
-} */
+}
 
 /* header */
+header,
+section,
+footer {
+  width: 100%;
+  padding: 0 var(--padding);
+  margin: 0 auto;
+}
+
 header {
   background-color: var(--color-back);
   width: 100%;
@@ -101,6 +94,7 @@ header {
   z-index: 1000;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -114,6 +108,11 @@ header {
 .header-logo img {
   width: 13rem;
   object-fit: contain;
+}
+
+#btn-open-nav,
+#btn-close-nav {
+  display: none;
 }
 
 .header-nav ul {
@@ -148,41 +147,49 @@ main {
   overflow: hidden;
 
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 2rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 4rem;
 }
 
 .section-banner .text-container {
   flex: 1 1 auto;
   min-width: 45rem;
+
+  padding-top: 20rem;
 }
 
 .section-banner .title {
   font-size: clamp(2.4rem, 4.6vw, 4.8rem);
   font-weight: 700;
-
-  margin-top: 20rem;
 }
 
 .section-banner .desc {
   width: 60%;
-  font-size: 1.6rem;
   font-weight: 400;
 }
 
 .section-banner .background-banner {
   flex: 1 1 41.5rem;
   min-width: 21rem;
+  aspect-ratio: 415 / 776;
 
   background: url("../assets/images/box-cat-bottom.png") no-repeat center bottom;
   background-size: 90%;
-
-  aspect-ratio: 415 / 136;
 }
 
 /* section-intro  */
 .section-intro {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
@@ -248,7 +255,7 @@ main {
 
   width: 100%;
   flex-wrap: nowrap;
-  overflow-x: auto; /* 가로 스크롤 가능 */
+  overflow-x: auto;
   padding: 3rem var(--padding);
   box-sizing: content-box;
 }
@@ -263,7 +270,7 @@ main {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 
-  border-radius: 3rem;
+  border-radius: clamp(1.8rem, 3vw, 3rem);
   box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -286,7 +293,7 @@ main {
 }
 
 .aside-subscribe {
-  border-radius: 3rem;
+  border-radius: clamp(1.8rem, 3vw, 3rem);
   background: #263140;
   width: calc(100% - var(--padding) * 2);
 
@@ -354,6 +361,11 @@ main {
   background: url("../assets/icons/mail.svg") no-repeat center / contain;
 }
 
+.aside-subscribe .btn {
+  flex: 0 0 auto;
+}
+
+/* background image */
 main .background-bottom {
   background: linear-gradient(
       0deg,
@@ -382,11 +394,6 @@ main .background-bottom {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; */
   text-align: center;
 
   padding: 6rem 10.8rem 4rem;
