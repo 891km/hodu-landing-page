@@ -1,0 +1,357 @@
+/* font */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+/* variable */
+:root {
+  --color-back: #f2e9d8;
+  --color-point: #d97652;
+  --header-height: 10.2rem;
+  --padding: clamp(6.6rem, 16.67%, calc((100% - 1280px) / 2));
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #000;
+}
+
+header,
+section,
+footer {
+  width: 100%;
+  padding: 0 var(--padding);
+  margin: 0 auto;
+}
+
+/* utils */
+.ally-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* temp  */
+body * {
+  border: 1px solid red;
+}
+
+/* header */
+header {
+  background-color: var(--color-back);
+  width: 100%;
+  height: var(--header-height);
+  position: sticky;
+  /* position: fixed; */
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 13rem;
+  object-fit: contain;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: clamp(2rem, 10%, 4rem);
+}
+
+.header-nav a:not(.btn) {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+
+  background-color: var(--color-point);
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  white-space: nowrap;
+}
+
+/* main */
+main {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* padding-bottom: 53.6rem; */
+}
+
+main .background-bottom {
+  background: linear-gradient(
+      0deg,
+      rgba(242, 233, 216, 0.6) 0%,
+      rgba(242, 233, 216, 0.6) 100%
+    ),
+    url("../assets/images/img_5.jpg") no-repeat center 40% / cover;
+  width: 100%;
+  height: 30rem;
+  /* aspect-ratio: 1920 / 340; */
+}
+
+/* section-banner */
+.section-banner {
+  width: 100%;
+  height: calc(90rem - var(--header-height));
+  background-color: var(--color-back);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 4rem;
+}
+
+.section-banner .btn {
+  /* 나중에 다시 보기 */
+  align-self: flex-start;
+}
+
+.section-banner .title {
+  font-size: 4rem;
+  font-weight: 700;
+
+  margin-top: 20rem;
+}
+
+.text-container.desc {
+  width: 80%;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.section-banner img {
+  width: 41.5rem;
+  object-fit: contain;
+
+  padding-top: 3.2rem;
+}
+
+/* section-intro  */
+.section-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0 12rem;
+  gap: 11rem;
+}
+
+.section-intro .title {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.section-intro img {
+  width: 66rem;
+  aspect-ratio: 660 / 390;
+  object-fit: cover;
+
+  border-radius: 3rem;
+  box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 0.25);
+}
+
+/* section-skills  */
+.section-skills {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+
+  margin: 0 0 19.6rem;
+}
+
+.section-skills .title {
+  color: var(--color-point);
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.section-skills .image-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.2rem;
+}
+
+.section-skills li {
+  flex: 1 1 37.8rem;
+  overflow: hidden;
+}
+
+.section-skills img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  border-radius: 3rem;
+  box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 0.25);
+}
+
+.section-skills .sub-text-container {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.2rem;
+}
+
+.aside-subscribe {
+  border-radius: 3rem;
+  background: #263140;
+  width: calc(100% - var(--padding) * 2);
+
+  z-index: 500;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  bottom: 24.6rem;
+
+  padding: 5rem 5.8rem;
+}
+
+.aside-subscribe .text-container {
+  gap: 1.8rem;
+}
+
+.aside-subscribe .title {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.aside-subscribe .desc {
+  color: #f2e9d8;
+  font-size: 1.4rem;
+}
+
+.aside-subscribe form {
+  width: 40%;
+  border-radius: 6rem;
+  background: #fff;
+
+  padding: 0.4rem 0.4rem 0.5rem 2.8rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: 1;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.aside-subscribe input {
+  height: 100%;
+}
+
+.aside-subscribe .icon-email {
+  background-color: pink;
+  width: 2.4rem;
+  aspect-ratio: 1 /1;
+  background: url("../assets/icons/mail.svg") no-repeat center / contain;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 16rem;
+}
+
+footer .sns-links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer .sns-links a {
+  display: block;
+  width: 4.2rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+footer .sns-links .blog {
+  background: #f29d52 url("../assets/icons/blog.svg") no-repeat center;
+  background-size: 60% auto;
+}
+
+footer .sns-links .instagram {
+  background: #f29d52 url("../assets/icons/instagram.svg") no-repeat center;
+  background-size: 60% auto;
+}
+
+footer .sns-links .facebook {
+  background: #f29d52 url("../assets/icons/facebook.svg") no-repeat center;
+  background-size: 60% auto;
+}
+
+footer .sns-links .youtube {
+  background: #f29d52 url("../assets/icons/youtube.svg") no-repeat center;
+  background-size: 60% auto;
+}
+
+footer .footer-links {
+  display: none;
+}
