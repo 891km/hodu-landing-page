@@ -107,6 +107,7 @@ header {
   line-height: 1;
   text-decoration: none;
   color: #fff;
+  font-size: 1.6rem;
   font-weight: 700;
 
   background-color: var(--color-point);
@@ -349,7 +350,6 @@ main .background-bottom {
   border-radius: 3rem;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 
-  height: 40rem;
   background: #f2e9d8 url("../assets/images/modal-bg-img.png") no-repeat center /
     cover;
 
