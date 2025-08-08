@@ -5,12 +5,7 @@
 :root {
   --color-back: #f2e9d8;
   --color-point: #d97652;
-  --padding: clamp(
-    6.6rem,
-    calc((100% - 1280px) / 2),
-    calc((100% - 1280px) / 2)
-  );
-  /* --padding: calc((100% - 1280px) / 2); */
+  --padding: clamp(4rem, calc((100% - 1280px) / 2), calc((100% - 1280px) / 2));
 }
 
 /* reset */
@@ -91,7 +86,7 @@ img {
   opacity: 0.5;
 }
 
-/* temp  */
+/* temp */
 /* body * {
   border: 1px solid red;
 } */
@@ -158,11 +153,12 @@ main {
 }
 
 .section-banner .text-container {
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+  min-width: 45rem;
 }
 
 .section-banner .title {
-  font-size: 4.8rem;
+  font-size: clamp(2.4rem, 4.6vw, 4.8rem);
   font-weight: 700;
 
   margin-top: 20rem;
@@ -174,15 +170,14 @@ main {
   font-weight: 400;
 }
 
-.section-banner .background-intro {
+.section-banner .background-banner {
   flex: 1 1 41.5rem;
+  min-width: 21rem;
 
   background: url("../assets/images/box-cat-bottom.png") no-repeat center bottom;
   background-size: 90%;
-  min-width: 30rem;
 
   aspect-ratio: 415 / 136;
-  /* padding-top: 3.2rem; */
 }
 
 /* section-intro  */
@@ -190,12 +185,14 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 11rem;
+  gap: 3rem;
   margin: 8rem 0 12rem;
 }
 
 .section-intro img {
-  width: 50%;
+  flex: 0 1 66rem;
+  min-width: 32rem;
+
   aspect-ratio: 660 / 390;
   object-fit: cover;
 
@@ -204,11 +201,12 @@ main {
 }
 
 .section-intro .text-container {
-  width: auto;
+  flex: 0 1 51rem;
+  min-width: 30rem;
 }
 
 .section-intro .title {
-  font-size: 3.6rem;
+  font-size: clamp(2.4rem, 3vw, 3.6rem);
   font-weight: 700;
 }
 
@@ -220,7 +218,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 9rem;
+  gap: 6rem;
 
   margin-bottom: 9rem;
 }
@@ -233,7 +231,7 @@ main {
 
 .section-skills .title {
   color: var(--color-point);
-  font-size: 4.8rem;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
   font-weight: 700;
 }
 
@@ -244,13 +242,20 @@ main {
 
 .section-skills .image-list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 7.2rem;
+  gap: clamp(2rem, 2.6vw, 7.2rem);
+
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* 가로 스크롤 가능 */
+  padding: 3rem var(--padding);
+  box-sizing: content-box;
 }
 
 .section-skills li {
   flex: 1 1 37.8rem;
+  min-width: 26rem;
 }
 
 .section-skills img {
@@ -291,7 +296,7 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3.6rem 2rem;
+  gap: 3rem;
 
   padding: 5rem 5.8rem;
   margin-bottom: 24.6rem;
@@ -303,8 +308,9 @@ main {
 }
 
 .aside-subscribe .title {
+  min-width: 20rem;
   color: #fff;
-  font-size: 3.6rem;
+  font-size: clamp(2.4rem, 3vw, 3.6rem);
   font-weight: 700;
 }
 
@@ -324,17 +330,26 @@ main {
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-rows: 1;
-  gap: 1.6rem;
+  gap: 0.8rem;
   align-items: center;
 }
 
 .aside-subscribe input {
   height: 100%;
+  font-size: 1.6rem;
+  padding: 0 0.8rem;
+}
+
+.aside-subscribe input::placeholder {
+  color: #767676;
+  font-size: 1.6rem;
+  line-height: 1;
 }
 
 .aside-subscribe .icon-email {
   background-color: pink;
   width: 2.4rem;
+  height: 100%;
   aspect-ratio: 1 /1;
   background: url("../assets/icons/mail.svg") no-repeat center / contain;
 }
