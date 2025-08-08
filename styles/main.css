@@ -5,7 +5,12 @@
 :root {
   --color-back: #f2e9d8;
   --color-point: #d97652;
-  --padding: clamp(6.6rem, 16.67%, calc((100% - 1280px) / 2));
+  --padding: clamp(
+    6.6rem,
+    calc((100% - 1280px) / 2),
+    calc((100% - 1280px) / 2)
+  );
+  /* --padding: calc((100% - 1280px) / 2); */
 }
 
 /* reset */
