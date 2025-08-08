@@ -58,9 +58,9 @@ img {
 }
 
 /* temp  */
-body * {
+/* body * {
   border: 1px solid red;
-}
+} */
 
 /* header */
 header {
@@ -107,7 +107,7 @@ header {
   line-height: 1;
   text-decoration: none;
   color: #fff;
-  font-weight: 500;
+  font-weight: 700;
 
   background-color: var(--color-point);
   padding: 1.5rem 3rem;
@@ -307,7 +307,7 @@ main {
 .aside-subscribe form {
   flex: 1 1 auto;
   border-radius: 6rem;
-  background: #fff;
+  background-color: #fff;
 
   padding: 0.5rem 0.5rem 0.5rem 2.8rem;
 
@@ -342,6 +342,54 @@ main .background-bottom {
   position: absolute;
   bottom: 0;
 }
+
+/* modal */
+.modal {
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+
+  height: 40rem;
+  background: #f2e9d8 url("../assets/images/modal-bg-img.png") no-repeat center /
+    cover;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 6rem 10.8rem 4rem;
+
+  z-index: 1500;
+}
+
+.modal .image-modal {
+  width: 11rem;
+  aspect-ratio: 1 / 1;
+  background: url("../assets/images/cat-subscribe.png") center / contain;
+  margin: 2.4rem;
+}
+
+.modal .title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--color-point);
+  margin-bottom: 1.2rem;
+}
+
+.modal .desc {
+  margin-bottom: 3.8rem;
+}
+
+/* #modal .btn {
+  font-weight: 700;
+} */
 
 /* footer */
 footer {

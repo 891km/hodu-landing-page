@@ -135,12 +135,28 @@
             value=""
             placeholder="Enter your e-mail address"
           />
-          <button class="btn subscribe" type="submit">Subscribe</button>
+          <button class="btn subscribe" id="btn-open-modal" type="button">
+            Subscribe
+          </button>
         </form>
       </aside>
 
       <div class="background-bottom"></div>
+
+      <dialog id="modal" class="modal">
+        <!-- !!질문 : h3가 적절한지 -->
+        <h3 class="ally-hidden">구독 감사인사 모달창</h3>
+        <div class="image-modal"></div>
+        <p class="title">Thank you!</p>
+        <p class="desc">
+          Lorem Ipsum is simply dummy text of the printing industry.
+        </p>
+        <button id="btn-close-modal" class="btn" type="button">
+          OK! I Love HODU
+        </button>
+      </dialog>
     </main>
+
     <footer>
       <div class="header-logo">
         <a href="#"><img src="./assets/icons/logo.svg" alt="호두 로고" /></a>
@@ -166,5 +182,20 @@
         <li><a href="#">Terms of Use</a></li>
       </ul>
     </footer>
+
+    <!-- modal script -->
+    <script>
+      const modal = document.getElementById("modal");
+      const openBtn = document.getElementById("btn-open-modal");
+      const closeBtn = document.getElementById("btn-close-modal");
+
+      openBtn.addEventListener("click", () => {
+        modal.showModal();
+      });
+
+      closeBtn.addEventListener("click", () => {
+        modal.close();
+      });
+    </script>
   </body>
 </html>
