@@ -266,6 +266,8 @@ main .background-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 3.6rem 2rem;
 
   position: absolute;
   bottom: 24.6rem;
@@ -275,6 +277,7 @@ main .background-bottom {
 
 .aside-subscribe .text-container {
   gap: 1.8rem;
+  flex: 1 1 auto;
 }
 
 .aside-subscribe .title {
@@ -289,7 +292,7 @@ main .background-bottom {
 }
 
 .aside-subscribe form {
-  width: 40%;
+  flex: 1 1 auto;
   border-radius: 6rem;
   background: #fff;
 
@@ -304,6 +307,7 @@ main .background-bottom {
 
 .aside-subscribe input {
   height: 100%;
+  border: 1px solid red;
 }
 
 .aside-subscribe .icon-email {
