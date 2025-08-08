@@ -133,17 +133,6 @@ main {
   /* padding-bottom: 53.6rem; */
 }
 
-main .background-bottom {
-  background: linear-gradient(
-      0deg,
-      rgba(242, 233, 216, 0.6) 0%,
-      rgba(242, 233, 216, 0.6) 100%
-    ),
-    url("../assets/images/img_5.jpg") no-repeat center 40% / cover;
-  width: 100%;
-  height: 30rem;
-}
-
 /* section-banner */
 .section-banner {
   width: 100%;
@@ -223,7 +212,7 @@ main .background-bottom {
   align-items: center;
   gap: 9rem;
 
-  margin-bottom: 22rem;
+  margin-bottom: 9rem;
 }
 
 .section-skills .text-container {
@@ -294,10 +283,8 @@ main .background-bottom {
   flex-wrap: wrap;
   gap: 3.6rem 2rem;
 
-  position: absolute;
-  bottom: 20rem;
-
   padding: 5rem 5.8rem;
+  margin-bottom: 24.6rem;
 }
 
 .aside-subscribe .text-container {
@@ -340,6 +327,20 @@ main .background-bottom {
   width: 2.4rem;
   aspect-ratio: 1 /1;
   background: url("../assets/icons/mail.svg") no-repeat center / contain;
+}
+
+main .background-bottom {
+  background: linear-gradient(
+      0deg,
+      rgba(242, 233, 216, 0.6) 0%,
+      rgba(242, 233, 216, 0.6) 100%
+    ),
+    url("../assets/images/img_5.jpg") no-repeat center 40% / cover;
+  width: 100%;
+  height: 30rem;
+
+  position: absolute;
+  bottom: 0;
 }
 
 /* footer */
