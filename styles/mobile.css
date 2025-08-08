@@ -176,6 +176,7 @@ header {
   width: 100%;
 }
 
+/* aside */
 .aside-subscribe {
   background: #263140;
   width: calc(100% - var(--padding-mobile-section) * 2);
@@ -231,4 +232,48 @@ header {
 
 .aside-subscribe input::placeholder {
   font-size: 1.4rem;
+}
+
+footer {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  height: 17.8rem;
+
+  padding: 3rem var(--padding-mobile) 2.4rem;
+
+  position: relative;
+}
+
+footer .header-logo img {
+  width: 11.2rem;
+}
+
+footer .sns-links {
+  gap: 1.6rem;
+}
+
+footer .sns-links a {
+  width: 3.2rem;
+}
+
+footer .footer-links {
+  position: absolute;
+  top: 50%;
+  right: var(--padding-mobile);
+  transform: translateY(-50%);
+  display: inline-block;
+  text-align: right;
+  white-space: nowrap;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 1.5rem;
+}
+
+footer .footer-links a {
+  color: #767676;
 }
