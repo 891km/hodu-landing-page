@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+input,
+button {
+  border: none;
+}
+
 html {
   font-size: 10px;
 }
@@ -54,9 +59,9 @@ img {
 }
 
 /* temp  */
-body * {
+/* body * {
   border: 1px solid red;
-}
+} */
 
 /* header */
 header {
@@ -64,7 +69,6 @@ header {
   width: 100%;
   height: var(--header-height);
   position: sticky;
-  /* position: fixed; */
   top: 0;
   z-index: 1000;
 
