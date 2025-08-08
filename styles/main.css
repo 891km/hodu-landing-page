@@ -358,10 +358,11 @@ main .background-bottom {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center; */
   text-align: center;
 
   padding: 6rem 10.8rem 4rem;
@@ -373,7 +374,7 @@ main .background-bottom {
   width: 11rem;
   aspect-ratio: 1 / 1;
   background: url("../assets/images/cat-subscribe.png") center / contain;
-  margin: 2.4rem;
+  margin: 2.4rem auto;
 }
 
 .modal .title {
@@ -386,10 +387,6 @@ main .background-bottom {
 .modal .desc {
   margin-bottom: 3.8rem;
 }
-
-/* #modal .btn {
-  font-weight: 700;
-} */
 
 /* footer */
 footer {
