@@ -126,13 +126,14 @@ header {
 }
 
 .section-intro img {
-  flex: 1 0 100%;
-  width: 100%;
+  flex: 1 1 auto;
+  width: 80%;
+  min-width: 32.6rem;
+
+  height: auto;
 
   aspect-ratio: 660 / 390;
   object-fit: cover;
-
-  border-radius: 1.8rem;
 }
 
 .section-intro .text-container {

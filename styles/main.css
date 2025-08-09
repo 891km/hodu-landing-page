@@ -207,7 +207,7 @@ main {
   aspect-ratio: 660 / 390;
   object-fit: cover;
 
-  border-radius: 3rem;
+  border-radius: clamp(1.8rem, 3vw, 3rem);
   box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 0.25);
 }
 
