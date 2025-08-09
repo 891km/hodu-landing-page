@@ -234,6 +234,21 @@ header {
   font-size: 1.4rem;
 }
 
+/* modal */
+.modal {
+  padding: 3rem 5rem 4rem;
+}
+
+.modal .text-container {
+  gap: 1rem;
+  margin-bottom: 2.8rem;
+}
+
+.modal .title {
+  font-size: 2.4rem;
+}
+
+/* footer */
 footer {
   flex-direction: column;
   justify-content: space-between;

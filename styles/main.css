@@ -421,21 +421,31 @@ main .background-bottom {
 }
 
 .modal .image-modal {
-  width: 11rem;
+  width: clamp(6rem, 10vw, 11rem);
   aspect-ratio: 1 / 1;
   background: url("../assets/images/cat-subscribe.png") center / contain;
   margin: 2.4rem auto;
 }
 
+.modal .text-container {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 3.8rem;
+}
+
 .modal .title {
-  font-size: 3.6rem;
+  font-size: clamp(2.4rem, 3vw, 3.6rem);
   font-weight: 700;
   color: var(--color-point);
-  margin-bottom: 1.2rem;
+  white-space: nowrap;
+
+  width: 30rem;
 }
 
 .modal .desc {
-  margin-bottom: 3.8rem;
+  font-size: 1.4rem;
 }
 
 /* footer */
