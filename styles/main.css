@@ -514,7 +514,7 @@ footer .sns-links {
 }
 
 footer .sns-links a {
-  display: block;
+  display: inline-block;
   width: 4.2rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
