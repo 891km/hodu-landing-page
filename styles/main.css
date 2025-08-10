@@ -129,8 +129,14 @@ header {
   gap: clamp(2rem, 10%, 4rem);
 }
 
+.header-nav li {
+  width: 100%;
+}
+
 .header-nav a:not(.btn) {
-  text-align: center;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
   text-decoration: none;
   color: #000;
 }
@@ -498,4 +504,13 @@ footer .sns-links .youtube {
 
 footer .footer-links {
   display: none;
+}
+
+footer .footer-links li {
+  width: 100%;
+}
+
+footer .footer-links a {
+  display: inline-block;
+  width: 100%;
 }
