@@ -170,7 +170,7 @@ header {
 .section-skills .image-list {
   gap: 2rem;
 
-  padding: 2rem var(--padding-mobile-section);
+  padding: 2rem var(--padding-mobile-section) 4rem;
 }
 
 .section-skills .sub-text-container {
