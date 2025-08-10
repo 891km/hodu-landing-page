@@ -1,23 +1,31 @@
 /* variable */
 :root {
-  --padding-mobile: clamp(2rem, calc((100% - 350px) / 2), 4rem);
-  --padding-mobile-section: clamp(2rem, calc((100% - 326px) / 2), 4rem);
+  --padding: clamp(2rem, calc((100% - 350px) / 2), 4rem);
+  --padding-section: clamp(2rem, calc((100% - 326px) / 2), 4rem);
 }
 
-/* utils */
+/* reset */
+body {
+  font-size: var(--fs-body-sm);
+}
+
+/* components */
+.text-container {
+  gap: 3rem;
+}
+
+.desc {
+  font-size: var(--fs-body-sm);
+}
+
 .btn {
-  font-size: 1.4rem;
+  font-size: var(--fs-body-sm);
   padding: 1.1rem 2.4rem;
 }
 
 /* header */
-header,
-footer {
-  padding: 0 var(--padding-mobile);
-}
-
 section {
-  padding: 0 var(--padding-mobile-section);
+  padding: 0 var(--padding-section);
 }
 
 header {
@@ -91,25 +99,20 @@ header {
   gap: 3rem;
 }
 
-.text-container {
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-
 .section-banner .text-container {
   text-align: center;
+  justify-content: center;
+  align-items: center;
 
   padding-top: 4rem;
 }
 
 .section-banner .title {
-  font-size: 2.4rem;
   width: 27rem;
 }
 
 .section-banner .desc {
-  font-size: 1.4rem;
+  font-size: var(--fs-body-sm);
   width: 27rem;
 }
 
@@ -147,12 +150,8 @@ header {
   gap: 2rem;
 }
 
-.section-intro .title {
-  font-size: 2.4rem;
-}
-
 .section-intro .desc {
-  font-size: 1.4rem;
+  font-size: var(--fs-body-sm);
 }
 
 /* section-skills  */
@@ -166,14 +165,10 @@ header {
   gap: 3rem;
 }
 
-.section-skills .title {
-  font-size: 2.4rem;
-}
-
 .section-skills .image-list {
   gap: 2rem;
 
-  padding: 2rem var(--padding-mobile-section) 4rem;
+  padding: 2rem var(--padding-section) 4rem;
 }
 
 .section-skills .sub-text-container {
@@ -183,7 +178,7 @@ header {
 /* aside */
 .aside-subscribe {
   background: #263140;
-  width: calc(100% - var(--padding-mobile-section) * 2);
+  width: calc(100% - var(--padding-section) * 2);
 
   display: flex;
   justify-content: space-between;
@@ -226,11 +221,11 @@ header {
 }
 
 .aside-subscribe input {
-  font-size: 1.4rem;
+  font-size: var(--fs-body-sm);
 }
 
 .aside-subscribe input::placeholder {
-  font-size: 1.4rem;
+  font-size: var(--fs-body-caption);
 }
 
 /* modal */
@@ -241,10 +236,6 @@ header {
 .modal .text-container {
   gap: 1rem;
   margin-bottom: 2.8rem;
-}
-
-.modal .title {
-  font-size: 2.4rem;
 }
 
 /* btn-scroll-top */
@@ -260,7 +251,7 @@ footer {
 
   height: 17.8rem;
 
-  padding: 3rem var(--padding-mobile) 2.4rem;
+  padding: 3rem var(--padding) 2.4rem;
 
   position: relative;
 }
@@ -280,7 +271,7 @@ footer .sns-links a {
 footer .footer-links {
   position: absolute;
   top: 50%;
-  right: var(--padding-mobile);
+  right: var(--padding);
   transform: translateY(-50%);
   text-align: right;
   white-space: nowrap;
