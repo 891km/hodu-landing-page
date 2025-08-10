@@ -75,10 +75,12 @@ img {
   cursor: pointer;
 }
 
-/* temp */
-/* body * {
-  border: 1px solid red;
-} */
+/* focus style */
+input:focus,
+:is(button, a):focus-visible {
+  outline: 0.4rem solid #ff4000;
+  outline-offset: 0.1rem;
+}
 
 /* header */
 header,
@@ -344,13 +346,12 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3rem 0;
+  gap: 2rem;
 }
 
 .aside-subscribe .input-wrapper {
   flex: 1 1 auto;
   width: auto;
-  height: 3rem;
 
   display: flex;
   justify-content: center;
@@ -369,9 +370,10 @@ main {
 .aside-subscribe input {
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 3rem;
   font-size: 1.6rem;
   padding: 0 0.8rem;
+  border-radius: 0.5rem;
 }
 
 .aside-subscribe input::placeholder {

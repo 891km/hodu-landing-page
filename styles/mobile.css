@@ -209,22 +209,17 @@ header {
   background-color: transparent;
   padding: 0;
 
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .aside-subscribe .input-wrapper {
-  flex: 1 1 auto;
   width: 100%;
-  height: 4rem;
+  padding: 0.5rem 1.6rem;
 
   border-radius: 6rem;
   background-color: #fff;
-  padding: 0.5rem 1.6rem;
 }
 
 .aside-subscribe .input-wrapper::before {
