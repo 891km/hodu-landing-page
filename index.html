@@ -14,21 +14,21 @@
       href="./styles/mobile.css"
       media="screen and (max-width: 768px)"
     />
-    <title>HODU</title>
+    <title>Landing | HODU</title>
   </head>
   <body>
     <header>
       <div class="header-logo">
-        <h1 class="ally-hidden">HODU</h1>
+        <h1 class="ally-hidden">호두 랜딩 페이지</h1>
         <a href="#"><img src="./assets/icons/logo.svg" alt="호두 로고" /></a>
       </div>
-      <button aria-label="네이게이션바 열기" id="btn-open-nav"></button>
+      <button id="btn-open-nav" aria-label="네비게이션바 열기"></button>
       <nav class="header-nav" id="header-nav">
-        <button aria-label="네이게이션바 닫기" id="btn-close-nav"></button>
+        <button id="btn-close-nav" aria-label="네비게이션바 닫기"></button>
         <ul>
-          <li><a href="#" aria-label="home 페이지로 이동">Home</a></li>
-          <li><a href="#" aria-label="about 페이지로 이동">About</a></li>
-          <li><a href="#" aria-label="support 페이지로 이동">Support</a></li>
+          <li><a href="#" aria-label="Home 페이지로 이동">Home</a></li>
+          <li><a href="#" aria-label="About 페이지로 이동">About</a></li>
+          <li><a href="#" aria-label="Support 페이지로 이동">Support</a></li>
           <li>
             <a
               class="btn download"
@@ -44,7 +44,7 @@
     </header>
     <main>
       <section class="section-banner">
-        <h2 class="ally-hidden">랜딩 페이지 배너</h2>
+        <h2 class="ally-hidden">배너</h2>
         <div class="text-container">
           <p class="title">
             Lorem Ipsum is simply<br />
@@ -121,7 +121,12 @@
             the 1500s, when an unknown Ipsum is simply dummy text of the
             printing and typesetting industry.
           </p>
-          <a href="#" class="btn learn-more">Learn More</a>
+          <a
+            href="#"
+            class="btn learn-more"
+            aria-label="Learn More 페이지로 이동"
+            >Learn More</a
+          >
         </div>
       </section>
 
@@ -143,7 +148,12 @@
               placeholder="Enter your e-mail address"
             />
           </div>
-          <button class="btn subscribe" id="btn-open-modal" type="button">
+          <button
+            class="btn subscribe"
+            id="btn-open-modal"
+            type="button"
+            aria-label="블로그 구독 신청하기"
+          >
             Subscribe
           </button>
         </form>
@@ -161,7 +171,12 @@
             Lorem Ipsum is simply dummy text of the printing industry.
           </p>
         </div>
-        <button id="btn-close-modal" class="btn" type="button">
+        <button
+          id="btn-close-modal"
+          class="btn"
+          type="button"
+          aria-label="모달창 닫기"
+        >
           OK! I Love HODU
         </button>
       </dialog>
@@ -172,24 +187,24 @@
         <a href="#"><img src="./assets/icons/logo.svg" alt="호두 로고" /></a>
       </div>
       <ul class="sns-links">
-        <li><a href="#" class="blog" aria-label="블로그로 이동하기"></a></li>
+        <li><a href="#" class="blog" aria-label="blog로 이동하기"></a></li>
         <li>
-          <a
-            href="#"
-            class="instagram"
-            aria-label="인스타그램으로 이동하기"
-          ></a>
+          <a href="#" class="instagram" aria-label="instagram으로 이동하기"></a>
         </li>
         <li>
-          <a href="#" class="facebook" aria-label="페이스북으로 이동하기"></a>
+          <a href="#" class="facebook" aria-label="facebook으로 이동하기"></a>
         </li>
-        <li><a href="#" class="youtube" aria-label="유튜브로 이동하기"></a></li>
+        <li>
+          <a href="#" class="youtube" aria-label="youtube로 이동하기"></a>
+        </li>
       </ul>
       <ul class="footer-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#" aria-label="About 페이지로 이동">About</a></li>
+        <li><a href="#" aria-label="Blog 페이지로 이동">Blog</a></li>
+        <li><a href="#" aria-label="Support 페이지로 이동">Support</a></li>
+        <li>
+          <a href="#" aria-label="Terms of Use 페이지로 이동">Terms of Use</a>
+        </li>
       </ul>
     </footer>
 
@@ -200,10 +215,12 @@
       const closeBtn = document.getElementById("btn-close-modal");
 
       openBtn.addEventListener("click", () => {
+        modal.style.display = "block";
         modal.showModal();
       });
 
       closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
         modal.close();
       });
 
@@ -213,19 +230,11 @@
       const nav = document.getElementById("header-nav");
 
       openBtn_nav.addEventListener("click", () => {
-        if (nav.style.right === "0") {
-          nav.style.right = "-28.9rem";
-        } else {
-          nav.style.right = "0";
-        }
+        nav.style.right = "0";
       });
 
       closeBtn_nav.addEventListener("click", () => {
-        if (nav.style.right === "-28.9rem") {
-          nav.style.right = "0";
-        } else {
-          nav.style.right = "-28.9rem";
-        }
+        nav.style.right = "-28.9rem";
       });
     </script>
   </body>
