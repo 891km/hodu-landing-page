@@ -5,7 +5,7 @@
 :root {
   --color-back: #f2e9d8;
   --color-point: #d97652;
-  --padding: clamp(4rem, calc((100% - 1280px) / 2), calc((100% - 1280px) / 2));
+  --padding: max(4rem, calc((100% - 1280px) / 2));
 }
 
 /* reset */
@@ -186,6 +186,7 @@ main {
 
 .section-banner .desc {
   width: 60%;
+  min-width: 34rem;
   font-weight: 400;
 }
 

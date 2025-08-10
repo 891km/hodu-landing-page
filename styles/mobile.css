@@ -1,7 +1,6 @@
 /* variable */
 :root {
   --padding-mobile: clamp(2rem, calc((100% - 350px) / 2), 4rem);
-  /* --padding-mobile: 2rem; */
   --padding-mobile-section: clamp(2rem, calc((100% - 326px) / 2), 4rem);
 }
 
@@ -283,7 +282,6 @@ footer .footer-links {
   top: 50%;
   right: var(--padding-mobile);
   transform: translateY(-50%);
-  display: inline-block;
   text-align: right;
   white-space: nowrap;
 
