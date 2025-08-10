@@ -175,8 +175,8 @@ header {
   width: 100%;
 }
 
-/* aside */
-.aside-subscribe {
+/* article */
+.article-subscribe {
   background: #263140;
   width: calc(100% - var(--padding-section) * 2);
 
@@ -190,15 +190,15 @@ header {
   margin-bottom: 24.6rem;
 }
 
-.aside-subscribe .text-container {
+.article-subscribe .text-container {
   align-items: start;
 }
 
-.aside-subscribe .title {
+.article-subscribe .title {
   width: 50%;
 }
 
-.aside-subscribe form {
+.article-subscribe form {
   border-radius: 0;
   background-color: transparent;
   padding: 0;
@@ -208,7 +208,7 @@ header {
   align-items: end;
 }
 
-.aside-subscribe .input-wrapper {
+.article-subscribe .input-wrapper {
   width: 100%;
   padding: 0.5rem 1.6rem;
 
@@ -216,15 +216,15 @@ header {
   background-color: #fff;
 }
 
-.aside-subscribe .input-wrapper::before {
+.article-subscribe .input-wrapper::before {
   width: 1.8rem;
 }
 
-.aside-subscribe input {
+.article-subscribe input {
   font-size: var(--fs-body-sm);
 }
 
-.aside-subscribe input::placeholder {
+.article-subscribe input::placeholder {
   font-size: var(--fs-body-caption);
 }
 

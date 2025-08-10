@@ -329,8 +329,8 @@ main {
   flex: 0 1 auto;
 }
 
-/* aside */
-.aside-subscribe {
+/* article */
+.article-subscribe {
   border-radius: var(--card-radius);
   background: #263140;
   width: calc(100% - var(--padding) * 2);
@@ -347,23 +347,23 @@ main {
   margin-bottom: 24.6rem;
 }
 
-.aside-subscribe .text-container {
+.article-subscribe .text-container {
   flex: 1 1 auto;
   gap: 1.8rem;
 }
 
-.aside-subscribe .title {
+.article-subscribe .title {
   min-width: 20rem;
   color: #fff;
 }
 
-.aside-subscribe .desc {
+.article-subscribe .desc {
   width: 100%;
   color: #f2e9d8;
   font-size: var(--fs-body-sm);
 }
 
-.aside-subscribe form {
+.article-subscribe form {
   flex: 1 1 auto;
 
   border-radius: 6rem;
@@ -378,7 +378,7 @@ main {
   gap: 2rem;
 }
 
-.aside-subscribe .input-wrapper {
+.article-subscribe .input-wrapper {
   flex: 1 1 auto;
   width: auto;
 
@@ -388,7 +388,7 @@ main {
   gap: 0.8rem;
 }
 
-.aside-subscribe .input-wrapper::before {
+.article-subscribe .input-wrapper::before {
   content: "";
   display: inline-block;
   width: 2.4rem;
@@ -396,7 +396,7 @@ main {
   background: url("../assets/icons/mail.svg") no-repeat center / contain;
 }
 
-.aside-subscribe input {
+.article-subscribe input {
   display: inline-block;
   width: 100%;
   height: 3rem;
@@ -405,13 +405,13 @@ main {
   border-radius: 0.5rem;
 }
 
-.aside-subscribe input::placeholder {
+.article-subscribe input::placeholder {
   color: #767676;
   font-size: var(--fs-body-md);
   line-height: 1;
 }
 
-.aside-subscribe .btn {
+.article-subscribe .btn {
   flex: 0 0 auto;
 }
 
