@@ -57,6 +57,10 @@ header {
   font-weight: 700;
 }
 
+.header-nav .btn {
+  margin: 2rem 0;
+}
+
 #btn-open-nav,
 #btn-close-nav {
   display: inline-block;
