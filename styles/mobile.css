@@ -165,14 +165,22 @@ header {
   gap: 3rem;
 }
 
+.section-skills .desc {
+  font-size: var(--fs-body-md);
+}
+
 .section-skills .image-list {
   gap: 2rem;
 
   padding: 2rem var(--padding-section) 4rem;
 }
 
-.section-skills .sub-text-container {
+.section-skills .text-container-row {
   width: 100%;
+}
+
+.section-skills .text-container-row .desc {
+  font-size: var(--fs-body-md);
 }
 
 /* article */
