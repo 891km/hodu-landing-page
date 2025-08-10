@@ -248,6 +248,11 @@ header {
   font-size: 2.4rem;
 }
 
+/* btn-scroll-top */
+#btn-scroll-top {
+  display: none;
+}
+
 /* footer */
 footer {
   flex-direction: column;

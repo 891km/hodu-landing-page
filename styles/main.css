@@ -458,6 +458,27 @@ main .background-bottom {
   font-size: 1.4rem;
 }
 
+/* btn-scroll-top */
+#btn-scroll-top {
+  position: sticky;
+  left: 100vw;
+  bottom: 2.4rem;
+  margin: 2.4rem;
+
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  background: #fff url("../assets/icons/top-btn.svg") no-repeat center / contain;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+  opacity: 0.8;
+
+  z-index: 2000;
+}
+
+#btn-scroll-top:hover {
+  opacity: 1;
+}
+
 /* footer */
 footer {
   display: flex;
