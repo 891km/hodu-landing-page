@@ -71,6 +71,11 @@ img {
   vertical-align: bottom;
 }
 
+picture {
+  position: relative;
+  display: inline-block;
+}
+
 picture img {
   width: 100%;
   height: auto;
@@ -260,7 +265,6 @@ main {
 .section-intro picture {
   flex: 0 1 66rem;
   min-width: 32rem;
-  position: relative;
 }
 
 .section-intro img {
@@ -284,7 +288,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 5rem;
 
   margin-bottom: 9rem;
 }
@@ -314,7 +318,7 @@ main {
   width: 100%;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 3rem var(--padding);
+  padding: 4rem var(--padding);
   box-sizing: content-box;
 }
 
