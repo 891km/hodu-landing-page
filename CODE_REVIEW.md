@@ -53,7 +53,7 @@
 
 # 4번 리뷰
 
-- 범위 : styles/main.css | 499 ~ 553 line (footer 부분)
+- 범위 : styles/mobile.css | 255 ~ 295 line (footer 부분)
 
 - 전체 개요
   `footer` 레이아웃을 `flex`와 `position` 속성을 조합하여 구성하였습니다.
