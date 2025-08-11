@@ -71,6 +71,11 @@ img {
   vertical-align: bottom;
 }
 
+picture img {
+  width: 100%;
+  height: auto;
+}
+
 /* a, input, button & focus style */
 a {
   text-decoration: none;
@@ -252,10 +257,13 @@ main {
   margin: 8rem 0 12rem;
 }
 
-.section-intro img {
+.section-intro picture {
   flex: 0 1 66rem;
   min-width: 32rem;
+  position: relative;
+}
 
+.section-intro img {
   aspect-ratio: 660 / 390;
   object-fit: cover;
 
