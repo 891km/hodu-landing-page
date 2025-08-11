@@ -119,10 +119,6 @@ header {
   min-width: auto;
 }
 
-.section-banner * {
-  border: 1px solid red;
-}
-
 .section-banner .background-banner {
   width: 20rem;
   /* min-height: ; */
