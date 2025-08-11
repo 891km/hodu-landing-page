@@ -254,13 +254,11 @@ header {
 /* footer */
 footer {
   flex-direction: column;
-  justify-content: space-between;
   align-items: start;
 
   height: 17.8rem;
 
   padding: 3rem var(--padding) 2.4rem;
-
   position: relative;
 }
 
@@ -272,8 +270,9 @@ footer .sns-links {
   gap: 1.6rem;
 }
 
-footer .sns-links a {
+footer .sns-links li {
   width: 3.2rem;
+  height: 3.2rem;
 }
 
 footer .footer-links {
@@ -288,9 +287,15 @@ footer .footer-links {
   flex-direction: column;
   justify-content: end;
   align-items: end;
-  gap: 1.5rem;
+  gap: 1.6rem;
+}
+
+footer .footer-links li {
+  width: 100%;
 }
 
 footer .footer-links a {
+  display: inline-block;
+  width: 100%;
   color: #767676;
 }
