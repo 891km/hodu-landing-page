@@ -246,7 +246,7 @@ main {
 
 .section-banner .background-banner {
   flex: 1 1 41.5rem;
-  min-width: 21rem;
+  min-width: 24rem;
 
   background: url("../assets/images/banner-bg-cat.png") no-repeat center bottom;
   background-size: 90%;

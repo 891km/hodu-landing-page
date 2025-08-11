@@ -100,6 +100,8 @@ header {
 }
 
 .section-banner .text-container {
+  width: 90%;
+  min-width: 24rem;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -108,17 +110,22 @@ header {
 }
 
 .section-banner .title {
-  width: 27rem;
+  width: 100%;
 }
 
 .section-banner .desc {
   font-size: var(--fs-body-sm);
-  width: 27rem;
+  width: 100%;
+  min-width: auto;
+}
+
+.section-banner * {
+  border: 1px solid red;
 }
 
 .section-banner .background-banner {
   width: 20rem;
-
+  /* min-height: ; */
   background-size: contain;
 }
 
