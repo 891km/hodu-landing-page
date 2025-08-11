@@ -221,7 +221,6 @@ main {
 .section-banner .background-banner {
   flex: 1 1 41.5rem;
   min-width: 21rem;
-  aspect-ratio: 415 / 776;
 
   background: url("../assets/images/box-cat-bottom.png") no-repeat center bottom;
   background-size: 90%;
