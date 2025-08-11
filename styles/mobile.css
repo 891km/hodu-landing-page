@@ -121,7 +121,6 @@ header {
 
 .section-banner .background-banner {
   width: 20rem;
-  /* min-height: ; */
   background-size: contain;
 }
 
@@ -160,7 +159,6 @@ header {
 /* section-skills  */
 .section-skills {
   gap: 2rem;
-
   margin-bottom: 5rem;
 }
 
@@ -174,8 +172,8 @@ header {
 
 .section-skills .image-list {
   gap: 2rem;
-
   padding: 2rem var(--padding-section) 4rem;
+  overflow-x: auto;
 }
 
 .section-skills .text-container-row {
