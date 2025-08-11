@@ -355,6 +355,33 @@ main {
   flex: 0 1 auto;
 }
 
+/* image-list - scrollbar */
+/* for standard */
+.section-skills .image-list {
+  scrollbar-width: auto;
+  scrollbar-color: transparent transparent;
+}
+
+.section-skills .image-list:hover {
+  scrollbar-color: #d976524c transparent;
+}
+
+/* for legacy */
+.section-skills .image-list::-webkit-scrollbar {
+  width: 0.6rem;
+  height: 1.2rem;
+  background-color: transparent;
+}
+
+.section-skills .image-list::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.section-skills .image-list:hover::-webkit-scrollbar-thumb {
+  background-color: #d976524c;
+  border-radius: 0.4rem;
+}
+
 /* article */
 .article-subscribe {
   border-radius: var(--card-radius);
