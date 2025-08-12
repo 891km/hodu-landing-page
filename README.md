@@ -10,9 +10,9 @@
 
 #### 관련 링크
 
-- **[[배포 URL 🔗]](https://891km.github.io/hodu-landing-page/)**
+- **[배포 URL 🔗](https://891km.github.io/hodu-landing-page/)**
 
-- **[[시연 영상 🎞️]](#)**
+- **[시연 영상 🎞️](https://youtu.be/whpIWQ6GTIw)**
 
 #### 작성자 및 개발자
 
@@ -90,7 +90,7 @@
 #### 2-1. 다운로드 버튼에 툴팁 추가
 
 - 'download' 버튼에 `::after` 가상요소를 이용하여 버튼의 역할과 다운로드 파일명을 안내하는 툴팁 스타일링을 추가하였습니다.
-  ![툴팁이 추가된 버튼 이미지](https://github.com/user-attachments/assets/cabf0129-d5f0-4940-8481-5f285ae7d51b)
+  ![툴팁이 추가된 버튼](https://github.com/user-attachments/assets/b165fe57-6167-4113-8281-04feed80ba57)
 
 #### 2-2. 포커스 스타일 적용
 
