@@ -163,7 +163,7 @@ input:focus,
   content: "about-hodu.pdf 파일을 다운로드";
 
   position: absolute;
-  bottom: -80%;
+  top: 125%;
   left: 50%;
   transform: translateX(-50%);
 
