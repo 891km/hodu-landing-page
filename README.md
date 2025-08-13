@@ -90,7 +90,7 @@
 #### 2-1. 다운로드 버튼에 툴팁 추가
 
 - 'download' 버튼에 `::after` 가상요소를 이용하여 버튼의 역할과 다운로드 파일명을 안내하는 툴팁 스타일링을 추가하였습니다.
-  ![툴팁이 추가된 버튼](https://github.com/user-attachments/assets/b165fe57-6167-4113-8281-04feed80ba57)
+  ![툴팁이 추가된 버튼](https://github.com/user-attachments/assets/cbef8712-0355-45a3-ac0a-ed7f7215032b)
 
 #### 2-2. 포커스 스타일 적용
 
